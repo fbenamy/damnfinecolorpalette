@@ -15,14 +15,14 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Wes Anderson Palettes
+# Damn Fine Color Palettes
 
 [![Build Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson)  
 ![CRAN Downloads](http://cranlogs.r-pkg.org/badges/wesanderson)
 
 ![](rushmore.jpg)
 
-> I saved you from boring plots. What did you ever do? - Max Fischer (probably)
+> That's a damn fine plot, Diane - Special Agent Dale Cooper (probably)
 
 Tired of generic mass produced palettes for your plots? Short of adding an owl and dressing up your plot in a bowler hat, here's the most indie thing you can do to one. First round of palettes derived from the amazing Tumblr blog [Wes Anderson Palettes.](http://wesandersonpalettes.tumblr.com/)
 
@@ -30,40 +30,39 @@ Tired of generic mass produced palettes for your plots? Short of adding an owl a
 ## Installation
 
 ```r
-install.packages("wesanderson")
+install.packages("damnfinecolors")
 ```
 
 __Or the development version__
 
 ```r
-devtools::install_github("karthik/wesanderson")
+devtools::install_github("fbenamy/damnfinecolorpalette")
 ```
 
 ## Usage
 
 ```{r, palettes_dummy}
-library("wesanderson")
+library("damnfinecolors")
 
 # See all palettes
-names(wes_palettes)
+names(damnfinecolors)
 ```
 
 ## Palettes
 
-### Bottle Rocket (1996)
+### The Red Room
 
-```{r, bottlerocket1}
-wes_palette("BottleRocket1")
-wes_palette("BottleRocket2")
+```{r, RedRoom}
+wes_palette("RedRoom")
 ```
 
-### Rushmore (1998)
+### The Lumber Mill
 
 ```{r, rushmore}
-wes_palette("Rushmore1")
+wes_palette("LumberMill")
 ```
 
-### The Royal Tenenbaums (2001)
+### OneEyedJacks
 
 ```{r, royal}
 wes_palette("Royal1")
