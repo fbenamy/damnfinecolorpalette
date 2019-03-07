@@ -3,7 +3,7 @@ Title: A Twin Peaks Palette Generator
 Description: Palettes generated mostly from the show Twin Peaks and associated media. Based on wesanderson. 
 Date: 2019-01-26
 Version: 0.3.6.9000
-Authors@R: c(person("Benamy", "Faith", role = c("aut"), email = "faith.benamy@gmail.com" )
+Authors@R: c(person("Benamy", "Faith", role = c("aut"), email = c("faith.benamy@gmail.com"))
 Depends:
     R (>= 3.0)
 License: MIT + file LICENSE
