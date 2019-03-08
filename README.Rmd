@@ -16,33 +16,26 @@ knitr::opts_chunk$set(
 ```
 
 # Damn Fine Color Palettes
-
-[![Build Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson)  
-![CRAN Downloads](http://cranlogs.r-pkg.org/badges/wesanderson)
-
-![](rushmore.jpg)
+![](damnfine.gif)
 
 > That's a damn fine plot, Diane - Special Agent Dale Cooper (probably)
 
-Tired of generic mass produced palettes for your plots? Short of adding an owl and dressing up your plot in a bowler hat, here's the most indie thing you can do to one. First round of palettes derived from the amazing Tumblr blog [Wes Anderson Palettes.](http://wesandersonpalettes.tumblr.com/)
+The wesanderson package claimed that "Short of adding an owl and dressing up your plot in a bowler hat, here's the most indie thing you can do to one." So I took them up on that challenge and made the damnfinecolorpalette where the owls are not what they seem. First round of palettes derived from the video [Color By Numbers: Twin Peaks.](https://vimeo.com/218231355), the instagram [colorpalatte.cinema](https://www.instagram.com/colorpalette.cinema/), and the use for a color picker extension and screenshots. Concept and code based on the wonderful wesanderson palette generator. 
 
 
 ## Installation
 
-```r
-install.packages("damnfinecolors")
-```
 
-__Or the development version__
+__Development version__
 
-```r
+```{r}
 devtools::install_github("fbenamy/damnfinecolorpalette")
 ```
 
 ## Usage
 
 ```{r, palettes_dummy}
-library("damnfinecolors")
+library(damnfinecolorpalette)
 
 # See all palettes
 names(damnfinecolors)
@@ -53,42 +46,73 @@ names(damnfinecolors)
 ### The Red Room
 
 ```{r, RedRoom}
-wes_palette("RedRoom")
+damnfine("RedRoom1")
+damnfine("RedRoom2")
+```
+
+### Becky Briggs
+```{r}
+damnfine("BeckyBriggs")
 ```
 
 ### The Lumber Mill
-
 ```{r, rushmore}
-wes_palette("LumberMill")
+damnfine("LumberMill")
 ```
 
-### OneEyedJacks
+### Phone Booth 
+```{r}
+damnfine("PhoneBooth")
+``` 
 
-```{r, royal}
-wes_palette("Royal1")
-wes_palette("Royal2")
+### PeteMartell 
+```{r}
+damnfine("PeteMartell")
+```
+
+### One Eyed Jacks
+
+```{r, OneEyedJacks}
+damnfine("OneEyedJacks")
+```
+
+### RR Diner
+
+```{r, RRDiner}
+damnfine("RRDiner")
+```
+
+### Dougie
+
+```{r, Dougie}
+damnfine("Dougie")
+```  
+
+### Audrey Horne
+
+```{r, Audrey Horne}
+damnfine("AudreyHorne")
 ```
 
 ```{r, ggplot1, fig.height = 3}
 library("ggplot2")
-ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar() +
-  scale_fill_manual(values = wes_palette("Royal1"))
+ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar(color = "black") +
+  scale_fill_manual(values = damnfine("AudreyHorne"))
 ```
 
-### The Life Aquatic with Steve Zissou (2004)
+### The Log Lady 
 
-```{r, lifeaquatic}
-wes_palette("Zissou1")
+```{r, Log Lady}
+damnfine("LogLady")
 ```
-
 
 ```{r, volcano, fig.height = 3}
-pal <- wes_palette("Zissou1", 21, type = "continuous")
+pal <- damnfine("LogLady", 21, type = "continuous")
 image(volcano, col = pal)
 ```
 
 ```{r, zissou_heatmap, fig.height = 3}
-pal <- wes_palette("Zissou1", 100, type = "continuous")
+pal <- damnfine("LogLady", 100, type = "continuous")
 # heatmap is a local dataset
 ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
   geom_tile() + 
@@ -98,65 +122,9 @@ ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
   coord_equal() 
 ```
 
-### The Darjeeling Limited (2007)
+### Special Agent 
 
-```{r, darjeeling}
-wes_palette("Darjeeling1")
-wes_palette("Darjeeling2")
+```{r, specialagent}
+damnfine("SpecialAgent")
 ```
 
-### Hotel Chevalier (2007)
-
-```{r, chevalier}
-wes_palette("Chevalier1")
-```
-
-### Fantastic Mr. Fox (2009)
-
-```{r, fantasticfox}
-wes_palette("FantasticFox1")
-```
-
-### Moonrise Kingdom (2012)
-
-```{r, moonrise}
-wes_palette("Moonrise1")
-wes_palette("Moonrise2")
-wes_palette("Moonrise3")
-```
-
-### Castello Cavalcanti (2013)
-
-```{r, castello}
-wes_palette("Cavalcanti1")
-```
-
-### The Grand Budapest Hotel (2014)
-
-```{r, grandbudapest}
-wes_palette("GrandBudapest1")
-wes_palette("GrandBudapest2")
-```
-
-
-### The Isle of Dogs (2018)
-
-```{r, isleofdogs}
-wes_palette("IsleofDogs1")
-wes_palette("IsleofDogs2")
-```
-
-## As seen in these publications
-
-- [The environmental niche of the global high seas pelagic longline fleet](http://advances.sciencemag.org/content/4/8/eaat3681) Science Advances  08 Aug 2018
-
-![Imgur](https://i.imgur.com/gYKFwEc.jpg)
-
-
-![Imgur](https://i.imgur.com/3Ztc5Qa.png)
-
-
-- [Lopus, S., & Frye, M. (2018). Visualizing Africa’s Educational Gender Gap. Socius: Sociological Research for a Dynamic World, 4, 237802311879595](http://journals.sagepub.com/doi/full/10.1177/2378023118795956) 
-
-
-![Imgur](https://i.imgur.com/0BVNi9g.jpg)

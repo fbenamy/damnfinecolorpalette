@@ -1,114 +1,143 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-Wes Anderson Palettes
-=====================
+Damn Fine Color Palettes
+========================
 
-[![Build
-Status](https://travis-ci.org/karthik/wesanderson.png)](https://travis-ci.org/karthik/wesanderson)  
-![CRAN Downloads](http://cranlogs.r-pkg.org/badges/wesanderson)
+![](damnfine.gif)
 
-![](rushmore.jpg)
+> That's a damn fine plot, Diane - Special Agent Dale Cooper (probably)
 
-> I saved you from boring plots. What did you ever do? - Max Fischer
-> (probably)
-
-Tired of generic mass produced palettes for your plots? Short of adding
-an owl and dressing up your plot in a bowler hat, here’s the most indie
-thing you can do to one. First round of palettes derived from the
-amazing Tumblr blog [Wes Anderson
-Palettes.](http://wesandersonpalettes.tumblr.com/)
+The wesanderson package claimed that "Short of adding an owl and dressing up your plot in a bowler hat, here's the most indie thing you can do to one." So I took them up on that challenge and made the damnfinecolorpalette where the owls are not what they seem. First round of palettes derived from the video [Color By Numbers: Twin Peaks.](https://vimeo.com/218231355), the instagram [colorpalatte.cinema](https://www.instagram.com/colorpalette.cinema/), and the use for a color picker extension and screenshots. Concept and code based on the wonderful wesanderson palette generator.
 
 Installation
 ------------
 
-``` r
-install.packages("wesanderson")
-```
-
-**Or the development version**
+**Development version**
 
 ``` r
-devtools::install_github("karthik/wesanderson")
+devtools::install_github("fbenamy/damnfinecolorpalette")
+#> Skipping install of 'damnfinecolorpalette' from a github remote, the SHA1 (7a7a2236) has not changed since last install.
+#>   Use `force = TRUE` to force installation
 ```
 
 Usage
 -----
 
 ``` r
-library("wesanderson")
+library(damnfinecolorpalette)
 
 # See all palettes
-names(wes_palettes)
-#>  [1] "BottleRocket1"  "BottleRocket2"  "Rushmore1"      "Rushmore"      
-#>  [5] "Royal1"         "Royal2"         "Zissou1"        "Darjeeling1"   
-#>  [9] "Darjeeling2"    "Chevalier1"     "FantasticFox1"  "Moonrise1"     
-#> [13] "Moonrise2"      "Moonrise3"      "Cavalcanti1"    "GrandBudapest1"
-#> [17] "GrandBudapest2" "IsleofDogs1"    "IsleofDogs2"
+names(damnfinecolors)
+#>  [1] "RedRoom1"     "RedRoom2"     "BeckyBriggs"  "LumberMill"  
+#>  [5] "PhoneBooth"   "PeteMartell"  "OneEyedJacks" "RRDiner"     
+#>  [9] "Dougie"       "AudreyHorne"  "LogLady"      "SpecialAgent"
 ```
 
 Palettes
 --------
 
-### Bottle Rocket (1996)
+### The Red Room
 
 ``` r
-wes_palette("BottleRocket1")
+damnfine("RedRoom1")
 ```
 
-![](figure/bottlerocket1-1.png)
+![](figure/RedRoom-1.png)
 
 ``` r
-wes_palette("BottleRocket2")
+damnfine("RedRoom2")
 ```
 
-![](figure/bottlerocket1-2.png)
+![](figure/RedRoom-2.png)
 
-### Rushmore (1998)
+### Becky Briggs
 
 ``` r
-wes_palette("Rushmore1")
+damnfine("BeckyBriggs")
+```
+
+![](figure/unnamed-chunk-3-1.png)
+
+### The Lumber Mill
+
+``` r
+damnfine("LumberMill")
 ```
 
 ![](figure/rushmore-1.png)
 
-### The Royal Tenenbaums (2001)
+### Phone Booth
 
 ``` r
-wes_palette("Royal1")
+damnfine("PhoneBooth")
 ```
 
-![](figure/royal-1.png)
+![](figure/unnamed-chunk-4-1.png)
+
+### PeteMartell
 
 ``` r
-wes_palette("Royal2")
+damnfine("PeteMartell")
 ```
 
-![](figure/royal-2.png)
+![](figure/unnamed-chunk-5-1.png)
+
+### One Eyed Jacks
+
+``` r
+damnfine("OneEyedJacks")
+```
+
+![](figure/OneEyedJacks-1.png)
+
+### RR Diner
+
+``` r
+damnfine("RRDiner")
+```
+
+![](figure/RRDiner-1.png)
+
+### Dougie
+
+``` r
+damnfine("Dougie")
+```
+
+![](figure/Dougie-1.png)
+
+### Audrey Horne
+
+``` r
+damnfine("AudreyHorne")
+```
+
+![](figure/Audrey%20Horne-1.png)
 
 ``` r
 library("ggplot2")
-ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar() +
-  scale_fill_manual(values = wes_palette("Royal1"))
+ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar(color = "black") +
+  scale_fill_manual(values = damnfine("AudreyHorne"))
 ```
 
 ![](figure/ggplot1-1.png)
 
-### The Life Aquatic with Steve Zissou (2004)
+### The Log Lady
 
 ``` r
-wes_palette("Zissou1")
+damnfine("LogLady")
 ```
 
-![](figure/lifeaquatic-1.png)
+![](figure/Log%20Lady-1.png)
 
 ``` r
-pal <- wes_palette("Zissou1", 21, type = "continuous")
+pal <- damnfine("LogLady", 21, type = "continuous")
 image(volcano, col = pal)
 ```
 
 ![](figure/volcano-1.png)
 
 ``` r
-pal <- wes_palette("Zissou1", 100, type = "continuous")
+pal <- damnfine("LogLady", 100, type = "continuous")
 # heatmap is a local dataset
 ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
   geom_tile() + 
@@ -120,105 +149,10 @@ ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
 
 ![](figure/zissou_heatmap-1.png)
 
-### The Darjeeling Limited (2007)
+### Special Agent
 
 ``` r
-wes_palette("Darjeeling1")
+damnfine("SpecialAgent")
 ```
 
-![](figure/darjeeling-1.png)
-
-``` r
-wes_palette("Darjeeling2")
-```
-
-![](figure/darjeeling-2.png)
-
-### Hotel Chevalier (2007)
-
-``` r
-wes_palette("Chevalier1")
-```
-
-![](figure/chevalier-1.png)
-
-### Fantastic Mr. Fox (2009)
-
-``` r
-wes_palette("FantasticFox1")
-```
-
-![](figure/fantasticfox-1.png)
-
-### Moonrise Kingdom (2012)
-
-``` r
-wes_palette("Moonrise1")
-```
-
-![](figure/moonrise-1.png)
-
-``` r
-wes_palette("Moonrise2")
-```
-
-![](figure/moonrise-2.png)
-
-``` r
-wes_palette("Moonrise3")
-```
-
-![](figure/moonrise-3.png)
-
-### Castello Cavalcanti (2013)
-
-``` r
-wes_palette("Cavalcanti1")
-```
-
-![](figure/castello-1.png)
-
-### The Grand Budapest Hotel (2014)
-
-``` r
-wes_palette("GrandBudapest1")
-```
-
-![](figure/grandbudapest-1.png)
-
-``` r
-wes_palette("GrandBudapest2")
-```
-
-![](figure/grandbudapest-2.png)
-
-### The Isle of Dogs (2018)
-
-``` r
-wes_palette("IsleofDogs1")
-```
-
-![](figure/isleofdogs-1.png)
-
-``` r
-wes_palette("IsleofDogs2")
-```
-
-![](figure/isleofdogs-2.png)
-
-As seen in these publications
------------------------------
-
--   [The environmental niche of the global high seas pelagic longline
-    fleet](http://advances.sciencemag.org/content/4/8/eaat3681) Science
-    Advances 08 Aug 2018
-
-![Imgur](https://i.imgur.com/gYKFwEc.jpg)
-
-![Imgur](https://i.imgur.com/3Ztc5Qa.png)
-
--   [Lopus, S., & Frye, M. (2018). Visualizing Africa’s Educational
-    Gender Gap. Socius: Sociological Research for a Dynamic World, 4,
-    237802311879595](http://journals.sagepub.com/doi/full/10.1177/2378023118795956)
-
-![Imgur](https://i.imgur.com/0BVNi9g.jpg)
+![](figure/specialagent-1.png)
