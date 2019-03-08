@@ -6,13 +6,17 @@
 damnfinecolors <- list(
   RedRoom1 = c("#1C1003", "#74574E", "#3C2802", "#785828", "#C77928", "#5D110C", "#0E3442", "#436176",
               "#5A3630", "#6B5A67", "#9C878E"),
-  RedRoom2 = c("#C2DDC7", "#5B1113", "#7A1317", "##62372D", "#110706",  "#A51A25", "#423330", "#E1B692", "#8D644E", "#D62639"),
-  BeckyBriggs = c(),
+  RedRoom2 = c("#C2DDC7", "#5B1113", "#7A1317", "#62372D", "#110706",  "#A51A25", "#423330", "#E1B692", "#8D644E", "#D62639"),
+  BeckyBriggs = c("#1E0002", "#490103", "#820308", "#AB070F", "#F06E73", "#FBB59E", "#F0A489", "#B9A270", "#C8923D", "#AF7443"),
   LumberMill = c("#492618", "#B3592E", "#747B7D", "#71473B", "#C97D59"),
   PhoneBooth = c("#1B1210", "#A43A15", "#FF6C29", "#F97453", "#F1AB9B", "#C1845E", "#FEF8D8"),
   PeteMartell = c("#562110", "#923616", "#5B4E2F", "#E68429", "#FBAD4D"),
   OneEyedJacks = c("#522B23", "#7E1F0E", "#D83418", "#E66A4E", "#FFCFA4"),
-  RRDiner = c( "#f4c33a",'#8E1F1F',"#844526", "#84d6cc", "#EBDCE0")
+  RRDiner = c( "#f4c33a",'#8E1F1F',"#844526", "#84d6cc", "#EBDCE0"),
+  Dougie = c("#1C1210", "#666B19", "#FAD0CB", "#25210E", "#A18068", "#593C27"),
+  AudreyHorne = c( "#492E25", "#E66F5D", "#D24E3B", "#EE3A2F", "#D08B8E"),
+  LogLady = c("#dd0d2c", "#E2B8A3", "#749092", "#72502E" , "#310A15"),
+  SpecialAgent = c("#A41822", "#FFFFFF", "#16080B", "#555051")
 )
 
 #' A Twin Peaks palette generator
@@ -20,9 +24,11 @@ damnfinecolors <- list(
 #' These are color palettes from the television show Twin Peaks and the movie
 #' Fire Walk with Me.
 #'
-#' @param n Number of colors desired. RedRoom, LumberMill, PhoneBooth,
-#' PeteMartell and OneEyedJacks color schemes are from the most video
-#'   \href{https://vimeo.com/218231355}{Color by Numbers: Twin Peaks}.
+#' @param n Number of colors desired. RedRoom1, LumberMill, PhoneBooth,
+#' PeteMartell and OneEyedJacks color schemes are from the video
+#'  \href{https://vimeo.com/218231355}{Color by Numbers: Twin Peaks}.. BeckyBriggs and
+#' RedRoom2 are from the instagram
+#' \href{https://www.instagram.com/colorpalette.cinema/}{colorpalette.cinema}
 #'   If omitted, uses all colours.
 #' @param name Name of desired palette. Choices are:
 #'   \code{RedRoom}, \code{LumberMill},  \code{PhoneBooth},
