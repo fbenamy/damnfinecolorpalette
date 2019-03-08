@@ -2,7 +2,7 @@
 Damn Fine Color Palettes
 ========================
 
-![](damnfine.gif)
+![]("damnfine.gif")
 
 > That's a damn fine plot, Diane - Special Agent Dale Cooper (probably)
 
@@ -15,8 +15,34 @@ Installation
 
 ``` r
 devtools::install_github("fbenamy/damnfinecolorpalette")
-#> Skipping install of 'damnfinecolorpalette' from a github remote, the SHA1 (7a7a2236) has not changed since last install.
-#>   Use `force = TRUE` to force installation
+#> Downloading GitHub repo fbenamy/damnfinecolorpalette@master
+#>   
+   checking for file ‘/private/var/folders/_0/_48x38gn5v93tt4zff8sx14r0000gn/T/Rtmp1weaKW/remotes40bf4212df8d/fbenamy-damnfinecolorpalette-cfbe6e3/DESCRIPTION’ ...
+  
+✔  checking for file ‘/private/var/folders/_0/_48x38gn5v93tt4zff8sx14r0000gn/T/Rtmp1weaKW/remotes40bf4212df8d/fbenamy-damnfinecolorpalette-cfbe6e3/DESCRIPTION’
+#> 
+  
+─  preparing ‘damnfinecolorpalette’:
+#> 
+  
+   checking DESCRIPTION meta-information ...
+  
+✔  checking DESCRIPTION meta-information
+#> 
+  
+─  checking for LF line-endings in source and make files and shell scripts
+#> 
+  
+─  checking for empty or unneeded directories
+#>    Removed empty directory ‘damnfinecolorpalette/figure’
+#> ─  looking to see if a ‘data/datalist’ file should be added
+#> 
+  
+─  building ‘damnfinecolorpalette_0.3.6.9000.tar.gz’
+#> 
+  
+   
+#> 
 ```
 
 Usage

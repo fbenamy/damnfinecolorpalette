@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 ```
 
 # Damn Fine Color Palettes
-![](damnfine.gif)
+![]("damnfine.gif")
 
 > That's a damn fine plot, Diane - Special Agent Dale Cooper (probably)
 
