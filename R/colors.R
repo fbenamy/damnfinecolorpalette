@@ -4,12 +4,15 @@
 #'
 #' @export
 damnfinecolors <- list(
-  RedRoom = c("#1C1003", "#74574E", "#3C2802", "#785828", "#C77928", "#5D110C", "#0E3442", "#436176",
+  RedRoom1 = c("#1C1003", "#74574E", "#3C2802", "#785828", "#C77928", "#5D110C", "#0E3442", "#436176",
               "#5A3630", "#6B5A67", "#9C878E"),
-  LumberMill = c("#492618", "#B3592E", "#747B7D", "#C97D59"),
+  RedRoom2 = c("#C2DDC7", "#5B1113", "#7A1317", "##62372D", "#110706",  "#A51A25", "#423330", "#E1B692", "#8D644E", "#D62639"),
+  BeckyBriggs = c(),
+  LumberMill = c("#492618", "#B3592E", "#747B7D", "#71473B", "#C97D59"),
   PhoneBooth = c("#1B1210", "#A43A15", "#FF6C29", "#F97453", "#F1AB9B", "#C1845E", "#FEF8D8"),
   PeteMartell = c("#562110", "#923616", "#5B4E2F", "#E68429", "#FBAD4D"),
-  OneEyedJacks = c("#522B23", "#7E1F0E", "#D83418", "#E66A4E", "#FFCFA4")
+  OneEyedJacks = c("#522B23", "#7E1F0E", "#D83418", "#E66A4E", "#FFCFA4"),
+  RRDiner = c( "#f4c33a",'#8E1F1F',"#844526", "#84d6cc", "#EBDCE0")
 )
 
 #' A Twin Peaks palette generator
