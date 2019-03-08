@@ -11,9 +11,11 @@ damnfine(name, n, type = c("discrete", "continuous"))
 \code{RedRoom}, \code{LumberMill},  \code{PhoneBooth},
 \code{PeteMartell}, \code{OneEyedJacks}}
 
-\item{n}{Number of colors desired. RedRoom, LumberMill, PhoneBooth,
-PeteMartell and OneEyedJacks color schemes are from the most video
-  \href{https://vimeo.com/218231355}{Color by Numbers: Twin Peaks}.
+\item{n}{Number of colors desired. RedRoom1, LumberMill, PhoneBooth,
+PeteMartell and OneEyedJacks color schemes are from the video
+ \href{https://vimeo.com/218231355}{Color by Numbers: Twin Peaks}.. BeckyBriggs and
+RedRoom2 are from the instagram
+\href{https://www.instagram.com/colorpalette.cinema/}{colorpalette.cinema}
   If omitted, uses all colours.}
 
 \item{type}{Either "continuous" or "discrete". Use continuous if you want

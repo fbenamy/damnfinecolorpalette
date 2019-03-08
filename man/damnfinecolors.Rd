@@ -5,7 +5,7 @@
 \alias{damnfinecolors}
 \alias{damnfinecolors-package}
 \title{Complete list of palettes}
-\format{An object of class \code{list} of length 5.}
+\format{An object of class \code{list} of length 12.}
 \usage{
 damnfinecolors
 }
