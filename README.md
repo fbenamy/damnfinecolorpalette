@@ -2,7 +2,7 @@
 Damn Fine Color Palettes
 ========================
 
-![]("damnfine.gif")
+![](figure/damnfine.gif)
 
 > That's a damn fine plot, Diane - Special Agent Dale Cooper (probably)
 
@@ -15,34 +15,6 @@ Installation
 
 ``` r
 devtools::install_github("fbenamy/damnfinecolorpalette")
-#> Downloading GitHub repo fbenamy/damnfinecolorpalette@master
-#>   
-   checking for file ‘/private/var/folders/_0/_48x38gn5v93tt4zff8sx14r0000gn/T/Rtmp1weaKW/remotes40bf4212df8d/fbenamy-damnfinecolorpalette-cfbe6e3/DESCRIPTION’ ...
-  
-✔  checking for file ‘/private/var/folders/_0/_48x38gn5v93tt4zff8sx14r0000gn/T/Rtmp1weaKW/remotes40bf4212df8d/fbenamy-damnfinecolorpalette-cfbe6e3/DESCRIPTION’
-#> 
-  
-─  preparing ‘damnfinecolorpalette’:
-#> 
-  
-   checking DESCRIPTION meta-information ...
-  
-✔  checking DESCRIPTION meta-information
-#> 
-  
-─  checking for LF line-endings in source and make files and shell scripts
-#> 
-  
-─  checking for empty or unneeded directories
-#>    Removed empty directory ‘damnfinecolorpalette/figure’
-#> ─  looking to see if a ‘data/datalist’ file should be added
-#> 
-  
-─  building ‘damnfinecolorpalette_0.3.6.9000.tar.gz’
-#> 
-  
-   
-#> 
 ```
 
 Usage
@@ -173,7 +145,7 @@ ggplot(heatmap, aes(x = X2, y = X1, fill = value)) +
   coord_equal() 
 ```
 
-![](figure/zissou_heatmap-1.png)
+![](figure/log_lady_heatmap-1.png)
 
 ### Special Agent
 
